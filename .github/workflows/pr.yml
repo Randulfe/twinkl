@@ -16,8 +16,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -28,7 +28,7 @@ jobs:
           if echo '${{ toJson(github.event.pull_request.labels) }}' | grep -q '"name":"DONT MERGE"'; then
             echo "❌ PR has DONT MERGE label."
             exit 1
-          fi
+          fipus
 
       - name: Run tsc
         run: npm run tsc
