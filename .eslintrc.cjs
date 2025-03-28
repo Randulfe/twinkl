@@ -16,11 +16,7 @@ module.exports = {
     es2021: true,
   },
   plugins: ['react', '@typescript-eslint'],
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:storybook/recommended'],
   settings: {
     react: {
       version: 'detect',
