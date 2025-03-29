@@ -2,4 +2,5 @@ npm run format  > /dev/null
 npm run tsc  > /dev/null 
 npm run lint:fix  > /dev/null
 npm run test  > /dev/null
+npm run format  > /dev/null  
 echo "🎉 All checks passed!" 
