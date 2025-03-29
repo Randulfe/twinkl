@@ -11,6 +11,7 @@ Having more time/ a non mocking API I could have:
 - Show full post details on click that could have an accordion like behavior where if the user clicks a post the title and body of it expands to more lines below taking further space.
 - Individual pages for posts using react router.
 - Edit post functionality.
+- A toast for the post deletion error message to prevent content shift.
 
 ## Task description
 
