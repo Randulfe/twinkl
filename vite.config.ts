@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { fileURLToPath } from 'url'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { fileURLToPath } from "url";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,9 +9,9 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '@',
-        replacement: fileURLToPath(new URL('./src', import.meta.url)),
+        find: "@",
+        replacement: fileURLToPath(new URL("./src", import.meta.url)),
       },
     ],
   },
-})
+});
