@@ -1,8 +1,13 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Page from "./Page";
+
+const queryClient = new QueryClient();
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello Twinkl!</h1>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Page />
+    </QueryClientProvider>
   );
 };
 

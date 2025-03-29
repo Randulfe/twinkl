@@ -9,8 +9,10 @@ const getPost = async (id: number): Promise<Post> => {
   return data;
 };
 
-const getPosts = async (): Promise<Post[]> => {
-  const { data } = await api.get(`${POST_PATH}`);
+const getPosts = async (title?: string): Promise<Post[]> => {
+  const { data } = await api.get(
+    `${POST_PATH}${title ? `?title=${title}` : ""}`,
+  );
   return data;
 };
 
@@ -54,16 +56,16 @@ export const useUpdatePost = (
   });
 };
 
-export const useDeletePost = (id: number) => {
+export const useDeletePost = () => {
   return useMutation({
-    mutationFn: () => deletePost(id),
-    mutationKey: ["deletePost", id],
+    mutationFn: (params: { id: number }) => deletePost(params.id),
+    mutationKey: ["deletePost"],
   });
 };
 
-export const usePosts = () => {
+export const usePosts = (title?: string) => {
   return useQuery({
-    queryKey: ["posts"],
-    queryFn: getPosts,
+    queryKey: ["posts", title],
+    queryFn: () => getPosts(title),
   });
 };
