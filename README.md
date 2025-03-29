@@ -13,21 +13,21 @@ https://jsonplaceholder.typicode.com/guide/
 
 ##### Fetch and display posts
 
-- Implement a component that fetches the list of posts from https://jsonplaceholder.typicode.com/posts - [ ]
-- Display all fetched posts in a list format. - [ ]
+- Implement a component that fetches the list of posts from https://jsonplaceholder.typicode.com/posts - [X]
+- Display all fetched posts in a list format. - [X]
 
 ##### Search mechanism
 
-- Implement a search bar that allows a user to search for posts by title and display only the desired posts. The search should be triggered on change. - [ ]
+- Implement a search bar that allows a user to search for posts by title and display only the desired posts. The search should be triggered on change. - [X]
 
 ##### Delete post
 
-- For each post in the list, provide a "Remove" button. - [ ]
-- Implement the functionality to delete a post when the "Remove" button is clicked, using the appropriate server-side REST API method DELETE. - [ ]
+- For each post in the list, provide a "Remove" button. - [X]
+- Implement the functionality to delete a post when the "Remove" button is clicked, using the appropriate server-side REST API method DELETE. - [X]
 
 ##### Testing
 
-- Write sufficient tests to satisfy a production-ready application. - [ ]
+- Write sufficient tests to satisfy a production-ready application. - [X]
 
 ##### Documentation
 

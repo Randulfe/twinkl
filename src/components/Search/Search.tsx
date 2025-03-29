@@ -12,23 +12,23 @@ export const Search = ({ label, placeholder, onSearch }: SearchProps) => {
   };
 
   return (
-    <form className="max-w-md mx-auto">
+    <form className="w-full">
       {label && (
-        <label htmlFor="search" className="mb-2 text-gray-900 block">
+        <label htmlFor="search" className="mb-2 block text-gray-900">
           {label}
         </label>
       )}
       <div className="relative">
         <div
           data-testid="search-icon"
-          className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+          className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3"
         >
           <SearchIcon aria-label="Search icon" size="s" />
         </div>
         <input
           type="text"
           id="search"
-          className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-md bg-gray-50 focus:ring-none focus:outline-none focus:border-gray-500"
+          className="focus:ring-none block w-full rounded-md border border-gray-300 bg-gray-50 p-4 ps-10 text-sm text-gray-900 focus:border-gray-500 focus:outline-none"
           placeholder={placeholder}
           onChange={handleChange}
         />

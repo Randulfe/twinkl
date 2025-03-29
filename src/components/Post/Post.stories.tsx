@@ -17,6 +17,7 @@ export const Basic: Story = {
   args: {
     title: "Post Title",
     body: "Post Body",
+    id: 1,
     onDelete: fn(),
   },
   play: async ({ canvasElement, args }) => {
@@ -29,5 +30,6 @@ export const Basic: Story = {
     const deleteButton = canvas.getByRole("button");
     await userEvent.click(deleteButton);
     expect(args.onDelete).toHaveBeenCalledTimes(1);
+    expect(args.onDelete).toHaveBeenCalledWith(args.id);
   },
 };
