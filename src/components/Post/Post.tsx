@@ -14,9 +14,9 @@ export const Post = ({ title, body, id, onDelete }: PostProps) => {
         <p className="text-md truncate font-bold md:text-xl">{title}</p>
         <p className="line-clamp-2 text-sm text-gray-500 md:text-lg">{body}</p>
       </div>
-      <div className="flex flex-shrink-0 flex-row">
+      <div className="flex flex-shrink-0 flex-row items-center">
         <button
-          className="cursor-pointer rounded-md p-2 text-gray-500 focus:bg-gray-100 focus:outline-none"
+          className="h-fit cursor-pointer rounded-md p-2 text-gray-500 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
           aria-label="Delete post"
           onClick={() => onDelete(id)}
         >

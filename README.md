@@ -1,5 +1,17 @@
 # Twinkl React Tech Test
 
+## Potential improvements
+
+Having more time/ a non mocking API I could have:
+
+- Implemented debouncing with an API filtering instead of doing it in the FE which can be inefficient if there are many posts. Debounce the search input.
+- Infinite scroll view of posts using a cursor based pagination with Tanstack Query where the user will retrieve more posts when the scroll down happens.
+- Storybook test for `Page.tsx` mocking the `web` module.
+- Unit test for the `useDebounce` hook that I ended up not using.
+- Show full post details on click that could have an accordion like behavior where if the user clicks a post the title and body of it expands to more lines below taking further space.
+- Individual pages for posts using react router.
+- Edit post functionality.
+
 ## Task description
 
 You are tasked with creating a React application that interacts with a Posts management API (https://jsonplaceholder.typicode.com/posts) to perform CRUD operations (Create, Read, Update, Delete). The application should be implemented using TypeScript and designed to be production-ready.
